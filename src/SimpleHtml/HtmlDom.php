@@ -85,6 +85,17 @@ class HtmlDom
         }
         $this->html->save();
     }
-
+    /**
+     * [editClass 修改class类]
+     * @return [type] [description]
+     */
+    public function editClass()
+    {
+        $this->html = SimpleHtml::str_get_html($this->html->outertext);
+        foreach ($html->find('[class]') as $e) {
+            $e->class = 'article-'.$e->attr['class'];
+        }
+        $this->html->save();
+    }
 
 }
