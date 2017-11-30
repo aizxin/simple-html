@@ -2,7 +2,7 @@
 一款PHP语言开发的HTML DOM解析插件，语法类似于Jquery，基于[simplehtmldom](http://simplehtmldom.sourceforge.net/)做了命名空间的封装。
 ## 安装
 ```
-    composer require whero/simple-html
+    composer require whero/simple-html  或者  composer require whero/simple-html dev-master
 ```
 ## 使用
 ```php
